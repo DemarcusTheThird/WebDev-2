@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head id="head">
+  <meta charset="utf-8" />
+  <title>All-in-one Forms</title>
+  <link href="Buttons.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Reenie+Beanie&display=swap" rel="stylesheet" />
+</head>
+
+<body id="body">
+  <form action="server.html" method="GET" enctype="multipart/form-data">
+
+    
+    <fieldset>
+        <legend>Input Controls</legend>
+      <div>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Write Your Name">
+      </div>
+      <br>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Write Your Email">
+      </div>
+      <br>
+      <div>
+        <label for="age">Age</label>
+        <input type="age" name="age" id="age" placeholder="Write Your Age">
+      </div>
+      <br>
+      <div>
+        <label for="date">Date</label>
+        <input type="date" name="date" id="date">
+      </div>
+      <br>
+      <div>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="Write Your Password">
+        <input type="checkbox" onclick="Something()">Show Password
+        <script>
+        function Something() {
+            var x = document.getElementById("password");
+            if (x.type === "password") {
+              x.type = "text";
+            } else {
+              x.type = "password";
+            }
+          }
+        </script>
+      </div>
+      <br>
+      <div>
+        <label for="phone number">Phone Number</label>
+        <input type="phone number" name="phone number" id="phone-number" placeholder="Write Your Number">
+      </div>
+      <br>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Other Input</legend>
+      <div>
+        <textarea name="Textarea" rows="4" cols="50" placeholder="Type Message"></textarea>
+      </div>
+
+      <input type="hidden" name="hidden" value="hi"> <!-- doesn't appear but could be used in JS to pass some info -->
+
+
+    </fieldset>
+<br>
+    <fieldset>
+        <legend>Buttons</legend>
+
+      <button type="submit"> <img src="https://www.freeiconspng.com/thumbs/youtube-logo-png/hd-youtube-logo-png-transparent-background-20.png"
+          alt="img" id="imgButton"></button>
+
+      <button type="button"> <a href="test.html"> <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Android_O_Preview_Logo.png" alt="redirect"
+            id="picButton"> </a></button>
+    </fieldset>
+  <br>
+    <fieldset>
+        <legend>Medical Conditions</legend>
+    <input type="checkbox" id="lactose" name="lactose">
+    <label for="lactose"> Lactose</label><br>
+    <input type="checkbox" id="gluten" name="gluten">
+    <label for="gluten"> Gluten</label><br>
+    <input type="checkbox" id="allergies" name="Allergy">
+    <label for="allergies"> Other Allergies</label><br>
+    <br>
+    <textarea name="Textarea2" rows="2" cols="20" placeholder="Write your allergies!"></textarea>
+</fieldset>
+<br>   
+<fieldset>
+    <legend>Food Preferences</legend>
+    <form>
+         <input type="radio" id="food_preference" name="food_preference">
+         <label for="food_preference">Vegetarian</label><br>
+         <input type="radio" id="food_preference" name="food_preference">
+         <label for="food_preference">Pescetarian</label><br>
+         <input type="radio" id="food_preference" name="food_preference">
+         <label for="food_preference">Meat Eater</label>
+        </form>
+</fieldset>
+<br>
+<fieldset>
+    <legend>Select City</legend>
+    <form action="/action_page.php">
+        <select name="city" id="city">
+          <option value="Choose City">Choose City</option>
+          <option value="Borås">Borås</option>
+          <option value="Eskilstuna">Eskilstuna</option>
+          <option value="Gävle">Gävle</option>
+          <option value="Göteborg">Göteborg</option>
+          <option value="Helsingborg">Helsingborg</option>
+          <option value="Jönköping">Jönköping</option>
+          <option value="Linköping">Linköping</option>
+          <option value="Norrköping">Norrköping</option>
+          <option value="Malmö">Malmö</option>
+          <option value="Stockholm">Stockholm</option>
+          <option value="Umeå">Umeå</option>
+          <option value="Uppsala">Uppsala</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Submit">
+      </form>
+</fieldset>
+</form>
+
+</body>
+
+</html>
